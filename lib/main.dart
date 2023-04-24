@@ -20,7 +20,7 @@ class Home  extends StatelessWidget {
         children:<Widget> [
           Row(
             children:<Widget> [
-              Expanded(child: Image.asset('assets/IMG_20181115_150259.jpg')),
+            Image.asset('assets/IMG_20181115_150259.jpg')),
               Expanded(
                 child: Container(
                   padding: EdgeInsets.all(30.0),
