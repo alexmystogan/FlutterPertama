@@ -14,32 +14,46 @@ class Home  extends StatelessWidget {
           centerTitle: true,
           backgroundColor:Colors.red[600]
       ),
-      body: Row(
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.start,
+        crossAxisAlignment: CrossAxisAlignment.start,
         children:<Widget> [
-          Text('Hallo Noop'),
-          TextButton(
-              onPressed: (){
-                print('Button Is Click');
-              },
-
-              child: Text('Hii',
-                style: TextStyle(
-                  color: Colors.black,
+          Row(
+            children:<Widget> [
+              Expanded(child: Image.asset('assets/IMG_20181115_150259.jpg')),
+              Expanded(
+                child: Container(
+                  padding: EdgeInsets.all(30.0),
+                  color: Colors.cyan,
+                  child: Text('1'),
                 ),
               ),
+              Expanded(
+              child: Container(
+                padding: EdgeInsets.all(30.0),
+                color: Colors.amberAccent,
+                child: Text('2'),
+              ),
+              ),
+              Expanded(
+              child: Container(
+                padding: EdgeInsets.all(30.0),
+                color: Colors.grey,
+                child: Text('3'),
+              ),
+              ),
+
+
+
+            ],
           ),
-          Container(
-            color: Colors.cyan,
-            padding: EdgeInsets.all(20),
-            child: Text('Aku Inputan Container'),
-          )
 
 
 
 
 
         ],
-      )
+      ),
 
 
     );
